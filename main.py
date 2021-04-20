@@ -27,7 +27,7 @@ while var:
         pyautogui.keyDown("shift")
         pyautogui.keyDown("v")
 
-        randomNum = random.randint(6, 9)
+        randomNum = random.randint(6, 10)
         if randomNum == 6:
             pyautogui.press("F6")
         if randomNum == 7:
@@ -36,10 +36,12 @@ while var:
             pyautogui.press("F8")
         if randomNum == 9:
             pyautogui.press("F9")
+        if randomNum == 10:
+            pyautogui.press("F10")
 
+        pyautogui.keyUp("shift")
         time.sleep(7)
         pyautogui.keyUp("v")
-        pyautogui.keyUp("shift")
         time.sleep(20)
 
     time.sleep(.3)
